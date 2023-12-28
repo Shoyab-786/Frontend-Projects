@@ -1,0 +1,312 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.box-main {
+    background-color: rgb(241, 249, 250);
+    min-height: 89vh;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 0px 20px;
+}
+
+.logo img {
+    width: 25px;
+    border: 3px solid white;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    transition: all 0.7s ease-in-out;
+}
+
+.bgc {
+    background-color: gray;
+}
+
+.nav-list {
+    display: flex;
+    width: 70%;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: black;
+    margin: 0px 10px;
+    font-size: 25px;
+}
+
+.nav-list li a:hover {
+    color: gray;
+}
+
+.right-nav {
+    width: 30%;
+    text-align: right;
+}
+
+.btn {
+    margin-right: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#search {
+    height: 30px;
+}
+
+.burger {
+    position: absolute;
+    top: 5px;
+    right: 3%;
+    cursor: pointer;
+    display: none;
+}
+
+.line {
+    width: 30px;
+    height: 4px;
+    margin: 5px;
+    background-color: black;
+}
+
+.content {
+    border: 5px solid black;
+    min-height: 20vh;
+    border-radius: 15px;
+    padding: 25px 25px;
+    margin: 36px 100px;
+}
+
+.content h1 {
+    font-size: 45px;
+}
+
+.web {
+    font-size: 25PX;
+    color: rgb(6, 6, 69);
+}
+
+.form_container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(273px, 1fr));
+    gap: 20px;
+}
+
+.form_control {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_control label {
+    font-size: 20px;
+}
+
+.form_control input,
+select,
+textarea {
+    text-align: center;
+    height: 35px;
+    font-size: 16px;
+    border: solid gray;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+textarea {
+    width: 100%;
+}
+
+input,
+select,
+textarea:focus {
+    outline-color: green;
+}
+
+.button_container {
+    display: flex;
+    justify-content: right;
+    margin-top: 30px;
+}
+
+.button_container button {
+    background-color: lightcoral;
+    cursor: pointer;
+}
+
+#search {
+    border: 2px solid black;
+}
+
+.button_container button {
+    margin-right: 20px;
+    border: 2px solid black;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.button_container button:hover {
+    background-color: black;
+    color: lightcoral;
+    border-color: lightcoral;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    font-size: 25px;
+}
+
+
+
+
+/* Responsiveness css */
+
+
+@media (max-width:824px) {
+    .content {
+        margin: 12px;
+    }
+
+    .button_container {
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    footer {
+        height: 70px;
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+@media (max-width:648px) {
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: 250px;
+
+    }
+
+    .right-nav {
+        text-align: center;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .h-nav {
+        height: 50px;
+    }
+
+    .v-class {
+        opacity: 0;
+    }
+
+    .btn {
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+
+    .content h1 {
+        text-align: center;
+    }
+
+    .button_container {
+        justify-content: center;
+        margin-top: 35px;
+    }
+}
+
+@media (max-width:384px) {
+    .content {
+        margin: 11px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+
+    input,
+    #job_role {
+        width: 200px;
+    }
+
+    #job_role {
+        width: 215px;
+    }
+
+    textarea {
+        width: 75%;
+    }
+
+    label {
+        width: 100px;
+    }
+
+    .content {
+        padding: 5px;
+    }
+
+    .form_control {
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media (max-width:290px) {
+    .content h1 {
+        font-size: 30px;
+    }
+
+    input,
+    #job_role {
+        width: 130px;
+    }
+
+    .form_control {
+        place-items: flex-start;
+    }
+
+    textarea {
+        width: 47%;
+    }
+
+    .form_container {
+        display: flex;
+        flex-direction: column;
+    }
+}

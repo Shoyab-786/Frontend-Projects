@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Ubuntu&display=swap');
+
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+    height: 65px;
+    background-color: black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav ul li {
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.spot {
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.logo img {
+    height: 45px;
+    margin: 10px;
+}
+
+.container {
+    min-height: 72vh;
+    width: 70%;
+    margin: 20px auto;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    color: white;
+    padding: 30px;
+    border-radius: 33px;
+    font-family: 'Nova Square', sans-serif;
+}
+
+.headline {
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+.songitem {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 60%;
+    background-color: white;
+    color: black;
+    margin: 20px 0px;
+    border-radius: 30px;
+    padding: 0px 20px;
+    justify-content: space-between;
+}
+
+.songitem img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.last {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 130px;
+    color: white;
+    position: sticky;
+    bottom: 0;
+}
+
+#progressbar {
+    width: 150vh;
+    cursor: pointer;
+}
+
+#info {
+    margin-left: 15px;
+}
+
+.songinfo img {
+    width: 42px;
+    opacity: 0;
+    transition: 0.3s ease-in;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-solid {
+    margin: 10px 20px;
+    cursor: pointer;
+}
+
+/* rsponsive css */
+@media only screen and (max-width:650px) {
+    .headline {
+        font-size: 2.1rem;
+    }
+
+    .songitem {
+        width: 90%;
+    }
+
+    #progressbar {
+        width: 100vh;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .headline {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .songname {
+        font-size: 13px;
+    }
+
+    .songitem {
+        gap: 10px;
+        padding: 0px 5px;
+        width: 100%;
+    }
+
+    .songitem img {
+        width: 40px;
+    }
+
+    .timestamp {
+        font-size: 13px;
+
+    }
+
+    #progressbar {
+        width: 50vh;
+        cursor: pointer;
+    }
+}

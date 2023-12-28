@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=La+Belle+Aurore&family=Style+Script&family=Stylish&family=Ubuntu&display=swap');
+
+* {
+    font-family: 'Stylish', serif;
+    font-weight: bolder;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(149, 199, 20, 1) 0%, rgba(0, 212, 255, 1) 96%);
+
+}
+html{
+    scroll-behavior: smooth !important;
+}
+
+.custom-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F19%2F12%2FVhKH4s.jpg&f=1&nofb=1&ipt=bee5861140624b32f0f68e52dcac01bced82e05916c71ec0e3f81a0101f183df&ipo=images);
+    background-blend-mode: lighten;
+}
+
+.align-logo {
+    float: left;
+}
+
+.logo-container {
+    max-width: 80px;
+    height: auto;
+}
+
+.text-container {
+    text-align: center;
+    margin-left: 1rem;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 18px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.carousel-img {
+    object-fit: cover;
+    height: 300px;
+}
+
+.container-fluid {
+    margin-top: 70px;
+}
+
+.text-secondary {
+    text-align: center;
+    font-size: 70px;
+    cursor: pointer;
+    background-color: white;
+    color: black !important;
+    margin-bottom: 20px !important;
+    border-radius: 50px;
+}
+
+.text-secondary:hover {
+    background-color: black;
+    color: white !important;
+    font-size: 75px;
+    transition: ease-out 0.6s;
+}
+
+.display-5 {
+    text-align: center;
+}
+
+.card {
+    cursor: pointer;
+    margin: 15px 0px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: ease-in-out 0.6s;
+    box-shadow: 5px 5px 5px 0px black;
+}
+
+.m-0 {
+    margin: 10px 0px !important;
+}
+
+.myForm {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    padding: 15px !important;
+    border-radius: 15px !important;
+    color: white;
+
+}
+
+.cards-2:hover {
+    transform: scale(1.08);
+    transition: ease-in-out 0.6s;
+    box-shadow: 5px 5px 5px 0px black;
+}
+
+input {
+    border-radius: 0 15px 15px 0 !important;
+
+}
+
+input:focus {
+    outline: none;
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+
+}
+
+.br-15 {
+    border-radius: 15px 0 0 15px !important;
+}
+
+#add_more {
+    color: white !important;
+    background-color: #fa8231 !important;
+    border-radius: 15px !important;
+    border: 0 !important;
+
+}
+
+#remove_more {
+    color: white !important;
+    background-color: #fc5c65 !important;
+    border-radius: 15px !important;
+    border: 0 !important;
+    display: none;
+
+}
+
+.submit_btn {
+    border-radius: 15px !important;
+    background-color: #95c714 !important;
+    border: 0 !important;
+}
+
+footer {
+    background: rgb(2, 0, 36) !important;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(149, 199, 20, 1) 0%, rgba(0, 212, 255, 1) 96%) !important;
+}
+
+.shoyab {
+    color: black !important;
+}
+
+@media (max-width: 700px) {
+    .text-container {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .align-logo {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .text-secondary {
+        font-size: 50px;
+    }
+
+    .lead {
+        text-align: center;
+    }
+
+    .card-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 300px) {
+    .text-secondary {
+        font-size: 25px;
+    }
+
+    .display-5 {
+        font-size: 25px;
+    }
+
+    .card-text {
+        font-size: 15px;
+    }
+
+    .h1,
+    h1 {
+        font-size: 33px;
+    }
+
+    .h2,
+    h2 {
+        font-size: 21px;
+    }
+}
