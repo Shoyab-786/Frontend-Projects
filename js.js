@@ -8,3 +8,7 @@ close_btn.addEventListener('click', () => {
 
 })
 
+
+document.querySelector('.getMail').addEventListener('click', () => {
+    alert("Send your mail to: shoyabm463@gmail.com");
+})
