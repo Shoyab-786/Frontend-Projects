@@ -41,6 +41,9 @@ html{
     text-align: center;
     margin-left: 1rem;
 }
+.navbar{
+    height: 60px;
+}
 
 .navbar-collapse {
     flex-grow: 0;
@@ -72,13 +75,14 @@ html{
     color: black !important;
     margin-bottom: 20px !important;
     border-radius: 50px;
+    transition: ease-out 0.4s;
 }
 
 .text-secondary:hover {
     background-color: black;
     color: white !important;
-    font-size: 75px;
-    transition: ease-out 0.6s;
+    transform: scale(0.98);
+    transition: ease-out 0.4s;
 }
 
 .display-5 {
@@ -92,7 +96,7 @@ html{
 
 .card:hover {
     transform: scale(1.02);
-    transition: ease-in-out 0.6s;
+    transition: ease-in-out 0.4s;
     box-shadow: 5px 5px 5px 0px black;
 }
 
@@ -109,9 +113,9 @@ html{
 }
 
 .cards-2:hover {
-    transform: scale(1.08);
-    transition: ease-in-out 0.6s;
-    box-shadow: 5px 5px 5px 0px black;
+    transform: scale(0.95);
+    transition: ease-in-out 0.4s;
+    box-shadow: 3px 3px 6px 0px black;
 }
 
 input {
