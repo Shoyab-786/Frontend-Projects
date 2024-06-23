@@ -39,11 +39,7 @@ header {
     width: 25px;
 }
 
-.navRight {
-    font-size: 30px;
-    font-weight: bolder;
-    cursor: pointer;
-}
+
 
 .navLeft ul,
 a {
@@ -132,11 +128,19 @@ section {
     padding: 50px 0px;
 }
 
+
 #sec2_heading {
     margin: 0px auto;
     margin-bottom: 30px;
     text-align: center;
     font-size: 60px;
+}
+
+#sec2_heading span {
+    background: linear-gradient(to right, #ff8a00 0%, #dd4c4f 60%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .project_container {
@@ -270,7 +274,9 @@ footer p {
     .project_container {
         grid-template-columns: auto auto;
     }
-
+#sec2_heading {
+        font-size: 50px;
+    }
     .sec3_heading {
         font-size: 32px;
     }
@@ -290,10 +296,6 @@ footer p {
     section {
         padding: 0px 0px;
     }
-
-    /* .sec3_heading {
-        font-size: 40px;
-    } */
 
     .icons img {
         width: 40px;
@@ -322,6 +324,10 @@ footer p {
         grid-template-columns: auto;
         gap: 50px;
     }
+    
+    #sec2_heading {
+        font-size: 40px;
+    }
 
     .sec3_heading {
         font-size: 23px;
@@ -349,9 +355,11 @@ footer p {
         position: absolute;
         left: 7px;
         top: 13px;
+        transition: 0.3s ease-in-out;
     }
 
     .close {
+        transition: 0.3s ease-in-out;
         display: block;
         position: absolute;
         top: 10px;
@@ -408,7 +416,9 @@ footer p {
     .sec1 {
         font-size: 25px;
     }
-
+ #sec2_heading {
+        font-size: 30px;
+    }
     .sec3_heading {
         font-size: 20px;
     }
@@ -448,6 +458,10 @@ footer p {
         font-size: 16px;
     }
 
+    p.icon_txt {
+        font-size: 15px;
+    }
+    
     footer p {
         font-size: 15px;
     }
@@ -466,10 +480,6 @@ footer p {
         font-size: 13px;
     }
 
-    #sec2_heading {
-        font-size: 45px;
-    }
-
     .icons {
         display: grid;
         grid-template-columns: auto auto;
@@ -477,10 +487,6 @@ footer p {
 }
 
 @media only screen and (max-width: 220px) {
-    .navRight {
-        font-size: 25px;
-    }
-
     .bar {
         border: 1px solid white;
         width: 20px;
@@ -496,16 +502,9 @@ footer p {
         left: 12px;
         font-size: 20px;
     }
-
-    #sec2_heading {
-        font-size: 38px;
-    }
-
+    
     footer p {
         font-size: 15px;
-    }
-
-    footer p {
         padding: 10px 0px;
     }
 }
@@ -541,10 +540,6 @@ footer p {
 }
 
 @media only screen and (max-width: 170px) {
-    .navRight {
-        font-size: 17px;
-    }
-
     .bar {
         border: 1px solid white;
         width: 14px;
